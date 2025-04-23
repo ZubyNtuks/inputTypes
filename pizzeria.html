@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Domino's Pizza</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Domino's Pizza</h1>
+    <form>
+      <fieldset>
+        <legend>Customer:</legend>
+        <div class="row">
+          <div>
+            <label for="firstname">First</label>
+            <input id="firstname" name="first_name" type="text">
+          </div>
+          <div>
+            <label for="lastname">Last</label>
+            <input id="lastname" name="last_name" type="text">
+          </div>
+        </div>
+      </fieldset>
+      <div class="row">
+        <div>
+          <fieldset>
+            <legend>Menu:</legend>
+            <div>
+              <input type="radio" id="pepperoni" name="pizza">
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+              <input type="radio" id="cheese" name="pizza">
+              <label for="cheese">Cheese</label>
+            </div>
+            <div>
+              <input type="radio" id="meat" name="pizza">
+              <label for="meat">Meat</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Size of Pizza:</legend>
+            <div>
+              <input type="radio" id="2for1" name="size">
+              <label for="2for1">2 for 1</label>
+            </div>
+            <div>
+              <input type="radio" id="medium" name="size">
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="radio" id="large" name="size">
+              <label for="large">Large</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Toppings:</legend>
+            <div>
+              <input type="checkbox" id="olives" name="olives" value="olives">
+              <label for="olives">Olives</label>
+            </div>
+            <div>
+              <input type="checkbox" id="greens" name="greens" value="greens">
+              <label for="greens">Green</label>
+            </div>
+            <div>
+              <input type="checkbox" id="garlic" name="garlic" value="garlic">
+              <label for="garlic">Garlic crust</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Here or to go:</legend>
+          <label for="container">Please Choose One</label>
+          <select name="container" id="container">
+            <option value="here">Here</option>
+            <option value="togo">To Go</option>
+          </select>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Adress for Delivery:</legend>
+          <label for="SpecialRequests">Special Requests:</label>
+          <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="20" placeholder="Adress"></textarea>
+        </fieldset>
+        <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+        <button type="submit">Submit Order</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
